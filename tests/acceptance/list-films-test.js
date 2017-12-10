@@ -15,5 +15,6 @@ test('should list available rentals.', function (assert) {
   visit('/films');
   andThen(function() {
     assert.equal(find('h1').text(), 'Films', 'should have a heading');
+    assert.equal(find('tbody tr').length, 3, 'should show the films table');
   });
 });

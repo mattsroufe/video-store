@@ -1,7 +1,23 @@
 export default function() {
   this.get('/films', function() {
     return {
-      data: []
+      data: [
+        {
+          id: 1,
+          type: 'films',
+          title: 'Goldeneye'
+        },
+        {
+          id: 2,
+          type: 'films',
+          title: 'The Big Lebowski'
+        },
+        {
+          id: 3,
+          type: 'films',
+          title: 'Dumb & Dumber'
+        }
+      ]
     };
   });
 
