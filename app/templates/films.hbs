@@ -1,0 +1,18 @@
+<h1>Films</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Rating</th>
+      <th>Release year</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |film|}}
+      {{film-listing film=film}}
+    {{/each}}
+  </tbody>
+</table>
+
